@@ -15,14 +15,7 @@ const Movies = () => {
     <section className="movie-page">
       <div className="container grid grid-4-col">
         {movie.map((curElement) => {
-          const {
-            title,
-            poster_path,
-
-            vote_average,
-
-            id,
-          } = curElement;
+          const { title, poster_path, id } = curElement;
           const movieName = title
             ? title.length >= 15
               ? `${title.substring(0, 15)}...`
