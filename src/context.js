@@ -1,7 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 const AppContext = createContext();
-export const API_URL = `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_APP_KEY}`;
-export const API_SEARCH = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_APP_KEY}&include_adult=false&language=en-US&page=1`;
+// export const API_URL = `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_APP_KEY}`;
+// export const API_SEARCH = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_APP_KEY}&include_adult=false&language=en-US&page=1`;
+export const API_URL = `https://api.themoviedb.org/3/trending/all/day?api_key=d7a800494edd3841049967c805ba75e1`;
+export const API_SEARCH = `https://api.themoviedb.org/3/search/movie?api_key=d7a800494edd3841049967c805ba75e1&include_adult=false&language=en-US&page=1`;
 
 export const API_IMAGE = `https://image.tmdb.org/t/p/w500`;
 const AppProvider = ({ children }) => {
