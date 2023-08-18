@@ -298,3 +298,86 @@ a:hover h2{
   background-color: var(--text-clr); 
   color: white; 
 }
+
+
+
+/* Global styles and imports */
+
+/* Original CSS code here */
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust font sizes for smaller screens */
+  }
+
+  .container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr); /* Display two columns on smaller screens */
+    gap: 2rem; /* Reduce gap between grid items */
+  }
+
+  .card {
+    width: 100%; /* Take up the full width on smaller screens */
+  }
+
+  .movie-card {
+    grid-template-columns: 1fr; /* Single column layout for movie cards */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+  .search-section {
+    margin: 2rem 0;
+  }
+
+  .search-container {
+    border-radius: 5px;
+  }
+
+  .search-input {
+    padding: 8px;
+  }
+
+  .search-icon {
+    font-size: 20px;
+  }
+
+  input {
+    padding: 3px;
+  }
+
+  .search-button {
+    height: 40px;
+    padding: 8px 15px;
+  }
+
+  .movie-section {
+    width: 90%;
+  }
+
+  .loading {
+    font-size: 2rem;
+  }
+
+  .movie-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-text {
+    font-size: 1.6rem;
+  }
+
+  .back-btn {
+    padding: 1rem 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  a.button {
+    padding: 0.8rem 2.4rem;
+    font-size: 1.4rem;
+  }
+}
