@@ -50,7 +50,7 @@ const SingleMovies = () => {
         </figure>
         <div className="card-content">
           <p className="title">{movie.title}</p>
-          <p className="card-text">{movie.release_date}</p>
+          <p className="card-text">Release Date:{movie.release_date}</p>
           <p className="card-text">Length: {movie.runtime} minutes</p>
           <p className="card-text">Rating: {movie.vote_average}</p>
           <p className="card-text">
