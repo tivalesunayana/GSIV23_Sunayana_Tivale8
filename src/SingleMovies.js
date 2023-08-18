@@ -51,7 +51,12 @@ const SingleMovies = () => {
         <div className="card-content">
           <p className="title">{movie.title}</p>
           <p className="card-text">{movie.release_date}</p>
-          <p>{movie.overview}</p>
+          <p className="card-text">Length: {movie.runtime} minutes</p>
+          <p className="card-text">Rating: {movie.vote_average}</p>
+          <p className="card-text">
+            Original Language: {movie.original_language}
+          </p>
+          <p className="card-text">Overview : {movie.overview}</p>
 
           <NavLink to="/" className="back-btn">
             Go Back

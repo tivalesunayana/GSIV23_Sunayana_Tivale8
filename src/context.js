@@ -20,7 +20,12 @@ const AppProvider = ({ children }) => {
       if (data) {
         setIsLoading(false);
         setIsError({ show: false, msg: "" });
-        setMovie(data.results);
+
+        const sortedMovies = data.results.sort((a, b) =>
+          b.release_date.localeCompare(a.release_date)
+        );
+
+        setMovie(sortedMovies);
       } else {
         setIsError({ show: true, msg: data.Error });
       }
