@@ -212,6 +212,7 @@ border-radius: 2rem;
 figure{
   margin: 0;
   padding: 0;
+ 
   
 }
 
@@ -404,4 +405,96 @@ a:hover h2{
     padding: 0.8rem 2.4rem;
     font-size: 1.4rem;
   }
+}
+
+
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* Existing font-size adjustment */
+  html {
+    font-size: 50%; /* Adjust font sizes for smaller screens */
+  }
+
+  /* Existing padding adjustment */
+  .container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  /* Existing grid adjustment */
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr); /* Display two columns on smaller screens */
+    gap: 1rem; /* Reduce gap between grid items */
+  }
+
+  /* Existing card width adjustment */
+  .card {
+    width: 100%; /* Take up the full width on smaller screens */
+  }
+
+  /* Existing movie card layout adjustment */
+  .movie-card {
+    grid-template-columns: 1fr; /* Single column layout for movie cards */
+    gap: 1rem; /* Adjust gap between elements */
+  }
+
+  /* Other adjustments for smaller screens */
+  .search-section {
+    margin: 2rem 0;
+  }
+
+  .search-container {
+    border-radius: 5px;
+  }
+
+  .search-input {
+    padding: 8px;
+  }
+
+  .search-icon {
+    font-size: 20px;
+  }
+
+  input {
+    padding: 3px;
+  }
+
+  .search-button {
+    height: 40px;
+    padding: 8px 15px;
+  }
+
+  .movie-section {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: -1rem;
+    margin-top: 1rem;
+    height: auto;
+  }
+
+  .loading {
+    font-size: 2rem;
+  }
+
+  .card-text {
+    font-size: 1.6rem;
+  }
+
+  .back-btn {
+    padding: 1rem 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  a.button {
+    padding: 0.8rem 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  figure{
+    margin-top: 0;
+    padding: 2rem;
+    height: 40%;
+  }
+  /* Additional styles can be adjusted as needed */
 }
