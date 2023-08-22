@@ -25,7 +25,7 @@ const Movies = () => {
           return (
             <NavLink key={id} to={`movie/${id}`}>
               <div className="movie-section">
-                <div className="card-info">
+                <div>
                   <h2>
                     {movieName.length >= 15 ? `${movieName}...` : movieName}
                   </h2>

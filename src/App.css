@@ -68,14 +68,15 @@ font-family: "Lora", serif;
   transition: all 0.5s linear;
 }
   
+  
 img {
-/*width: 25rem; */
-min-width: 10rem;
-max-height: 30rem;
-margin: 1rem 0;
-border-radius: 1rem;
-transition: all 0.3s linear
-}
+  /*width: 25rem; */
+  min-width: 10rem;
+  max-height: 30rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  transition: all 0.3s linear
+  }
 .container {
 max-width: 140rem; 
 margin: auto; 
@@ -93,22 +94,11 @@ gap: 3rem;
 
 
 .grid-4-col {
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(4, 30rem);
 
 
 }
 
- .card {
-width: 25rem; 
-max-width: 30rem; 
-min-height: 30rem;
-/* background-color: #f
-/* padding: 2rem; */
- border-radius: 1rem;
-display: flex;
-justify-content: center;
- align-items: center;
-}
 
 .search-section {
   text-align: center;
@@ -175,23 +165,35 @@ margin-top: 1rem; font-size: 1.8rem;
 
 }
 
-.movie-section {
+/* .movie-section {
   margin-top: 3rem;
   margin-left: 5rem;
    margin-right: auto;
   width: 70%;
   height: 50vb;
-  background-color: var(--bg-clr);
+  background-color: red;
   display: grid;
  place-items: center;
  
+} */
+.movie-section {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  /* background-color: red; */
+  display: grid;
+  place-items: center;
+  text-align: left; /* Align content to the left */
+  justify-content: center;
 }
 
- .loading {
+
+ /* .loading {
   font-size: 3.2rem;
   color: var(-text-clr);
   text-align: center;
-   } 
+   }  */
  
   
   .movie-section .loading {
@@ -210,9 +212,11 @@ border-radius: 2rem;
 
 } */
 figure{
-  margin: 0;
-  padding: 0;
- 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+  padding: 3px;
   
 }
 
@@ -226,13 +230,13 @@ figure{
 }
 
 .movie-card img {
-  margin: 0;
-  border-radius: 0;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  margin: 2;
+  border-radius: 4;
+  /* border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem; */
   max-height: 50rem;
   width: 100%; /* Make the image width 100% of its container */
-  height: auto; /* Maintain aspect ratio */
+  height: 60vh; /* Maintain aspect ratio */
   object-fit: cover; /* Resize the image while preserving aspect ratio */
   min-width: 5rem;
 }
@@ -337,16 +341,20 @@ a:hover h2{
   }
 
   .container {
-    padding: 1rem; /* Reduce padding for smaller screens */
+    padding: 0.3rem; /* Reduce padding for smaller screens */
+    margin: auto;
+    max-width: 100%;/* Ensure the container doesn't exceed screen width */
   }
 
   .grid-4-col {
     grid-template-columns: repeat(2, 1fr); /* Display two columns on smaller screens */
-    gap: 2rem; /* Reduce gap between grid items */
+    gap: 0.5rem; /* Reduce gap between grid items */
   }
 
   .card {
     width: 100%; /* Take up the full width on smaller screens */
+
+  
   }
 
   .movie-card {
@@ -355,7 +363,7 @@ a:hover h2{
 
   /* Adjust other styles as needed for smaller screens */
   .search-section {
-    margin: 2rem 0;
+    margin: 0.8rem 0;
   }
 
   .search-container {
@@ -373,6 +381,7 @@ a:hover h2{
   input {
     padding: 3px;
   }
+  
 
   .search-button {
     height: 40px;
@@ -380,7 +389,7 @@ a:hover h2{
   }
 
   .movie-section {
-    width: 90%;
+    width: 80%;
   }
 
   .loading {
@@ -406,95 +415,31 @@ a:hover h2{
     font-size: 1.4rem;
   }
 }
+.card {
+  width: 100%; /* Take up full width */
+  max-width: 30rem; /* Set maximum width */
+  min-height: 30rem;
+  /* background-color: #f; */
+  /* padding: 2rem; */
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
+}
 
 
 
 
-/* Media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
-  /* Existing font-size adjustment */
-  html {
-    font-size: 50%; /* Adjust font sizes for smaller screens */
-  }
 
-  /* Existing padding adjustment */
-  .container {
-    padding: 1rem; /* Reduce padding for smaller screens */
-  }
+.card img {
+  max-width: 84%; /* Make sure the image doesn't overflow */
+  max-height: 100%;
+  border-radius: 1rem;
+  margin: 1rem 0; /* Add margin for spacing */
 
-  /* Existing grid adjustment */
-  .grid-4-col {
-    grid-template-columns: repeat(2, 1fr); /* Display two columns on smaller screens */
-    gap: 1rem; /* Reduce gap between grid items */
-  }
-
-  /* Existing card width adjustment */
-  .card {
-    width: 100%; /* Take up the full width on smaller screens */
-  }
-
-  /* Existing movie card layout adjustment */
-  .movie-card {
-    grid-template-columns: 1fr; /* Single column layout for movie cards */
-    gap: 1rem; /* Adjust gap between elements */
-  }
-
-  /* Other adjustments for smaller screens */
-  .search-section {
-    margin: 2rem 0;
-  }
-
-  .search-container {
-    border-radius: 5px;
-  }
-
-  .search-input {
-    padding: 8px;
-  }
-
-  .search-icon {
-    font-size: 20px;
-  }
-
-  input {
-    padding: 3px;
-  }
-
-  .search-button {
-    height: 40px;
-    padding: 8px 15px;
-  }
-
-  .movie-section {
-    width: 100%;
-    margin-left: 0rem;
-    margin-right: -1rem;
-    margin-top: 1rem;
-    height: auto;
-  }
-
-  .loading {
-    font-size: 2rem;
-  }
-
-  .card-text {
-    font-size: 1.6rem;
-  }
-
-  .back-btn {
-    padding: 1rem 2.4rem;
-    font-size: 1.4rem;
-  }
-
-  a.button {
-    padding: 0.8rem 2.4rem;
-    font-size: 1.4rem;
-  }
-
-  figure{
-    margin-top: 0;
-    padding: 2rem;
-    height: 40%;
-  }
-  /* Additional styles can be adjusted as needed */
+  
 }
