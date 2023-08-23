@@ -77,6 +77,8 @@ img {
   border-radius: 1rem;
   transition: all 0.3s linear
   }
+
+  
 .container {
 max-width: 140rem; 
 margin: auto; 
@@ -93,12 +95,12 @@ gap: 3rem;
 
 
 
+
 .grid-4-col {
-grid-template-columns: repeat(4, 30rem);
-
-
-}
-
+  grid-template-columns: repeat(4, 1fr);
+  
+  
+  }
 
 .search-section {
   text-align: center;
@@ -231,6 +233,7 @@ figure{
 
 .movie-card img {
   margin: 2;
+  
   border-radius: 4;
   /* border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem; */
@@ -270,12 +273,13 @@ a {
    display: flex;
 justify-content: center;
 margin-top: 2rem;
-padding: 3.2rem 1rem; 
+padding: 3rem 0rem; 
 color: var(-text-clr);
 border: 0.2rem solid var(--text-clr);
 font-size: 1.8rem;
 border-radius: 0.5rem;
 transition: all 0.3s linear;
+/* background-color: red; */
 }
 a.button {
   text-align: center;
@@ -406,10 +410,17 @@ a:hover h2{
   }
 
   .back-btn {
-    padding: 1rem 2.4rem;
+    padding: 1rem 2rem;
     font-size: 1.4rem;
   }
-
+  img {
+    /*width: 25rem; */
+    min-width: 10rem;
+    max-height: 30rem;
+    margin: 0rem 0;
+    border-radius: 1rem;
+    transition: all 0.3s linear
+    }
   a.button {
     padding: 0.8rem 2.4rem;
     font-size: 1.4rem;
